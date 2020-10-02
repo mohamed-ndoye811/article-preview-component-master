@@ -18,18 +18,18 @@ body {
     left: 50%;
     top: 50%;
     background-color: white;
-    width: 42%;
-    height: 32%;
+    width: 850px;
+    height: 325px;
     display: flex;
     flex-direction: row;
     align-items: center;
     border-radius: 9px;
-    box-shadow: 0 0 40px hsl(212, 23%, 69%);
+    box-shadow: 0 0px 50px $grayish-blue;
     overflow: hidden;
 
     img {
-      height: 350px;
-      width: 350px;
+      height: 100%;
+      width: 325px;
       object-position: left;
       object-fit: cover;
     }
@@ -40,9 +40,9 @@ body {
 
       .text {
         h1 {
-          font-size: 1.5em;
+          font-size: 1.75em;
           color: $very-dark-grayish-blue;
-          line-height: 1.5em;
+          line-height: 1.3em;
           font-weight: 700;
           margin-bottom: 10px;
         }
@@ -54,6 +54,7 @@ body {
           font-size: 13px;
           text-align: justify;
           line-height: 1.7em;
+          letter-spacing: 0.02em;
         }
       }
 

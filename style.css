@@ -15,8 +15,8 @@ body .global-aricle-container {
   left: 50%;
   top: 50%;
   background-color: white;
-  width: 42%;
-  height: 32%;
+  width: 850px;
+  height: 325px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,14 +28,14 @@ body .global-aricle-container {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 9px;
-  -webkit-box-shadow: 0 0 40px #9eafc2;
-          box-shadow: 0 0 40px #9eafc2;
+  -webkit-box-shadow: 0 0px 50px #9eafc2;
+          box-shadow: 0 0px 50px #9eafc2;
   overflow: hidden;
 }
 
 body .global-aricle-container img {
-  height: 350px;
-  width: 350px;
+  height: 100%;
+  width: 325px;
   -o-object-position: left;
      object-position: left;
   -o-object-fit: cover;
@@ -48,9 +48,9 @@ body .global-aricle-container .article-panel {
 }
 
 body .global-aricle-container .article-panel .text h1 {
-  font-size: 1.5em;
+  font-size: 1.75em;
   color: #48556a;
-  line-height: 1.5em;
+  line-height: 1.3em;
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -62,6 +62,7 @@ body .global-aricle-container .article-panel .text p {
   font-size: 13px;
   text-align: justify;
   line-height: 1.7em;
+  letter-spacing: 0.02em;
 }
 
 body .global-aricle-container .article-panel .post-footer {
