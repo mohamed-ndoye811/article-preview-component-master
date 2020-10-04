@@ -16,8 +16,8 @@ body .article {
   top: 47%;
   font-size: 13px;
   background-color: white;
-  width: 795px;
-  height: 315px;
+  width: 750px;
+  height: 290px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,24 +44,25 @@ body .article img {
 }
 
 body .article__wrapper {
-  padding: 0px 50px 0px 50px;
-  margin: 250px 0 250px 0;
+  margin: -95px 40px 0px 40px;
+  height: 150px;
 }
 
 body .article__wrapper__text h1 {
-  font-size: 1.65em;
+  font-size: 19px;
   color: #48556a;
   line-height: 1.3em;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 body .article__wrapper__text p {
   color: #6d7f97;
-  width: 97%;
+  width: 360px;
   margin-top: 20px;
   text-align: justify;
-  line-height: 1.6em;
+  line-height: 1.5em;
   letter-spacing: 0.025em;
   font-weight: 500;
   font-size: 13px;
@@ -81,7 +82,6 @@ body .article__wrapper__footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: -8px;
 }
 
 body .article__wrapper__footer__poster-details {
@@ -101,8 +101,8 @@ body .article__wrapper__footer__poster-details {
 }
 
 body .article__wrapper__footer__poster-details img {
-  height: 40px;
-  width: 40px;
+  height: 45px;
+  width: 45px;
   border-radius: 100px;
 }
 
@@ -113,7 +113,7 @@ body .article__wrapper__footer__poster-details__infos {
 }
 
 body .article__wrapper__footer__poster-details__infos__username {
-  font-size: 15px;
+  font-size: 14px;
   color: #48556a;
   position: relative;
   top: 2px;
@@ -121,7 +121,7 @@ body .article__wrapper__footer__poster-details__infos__username {
 
 body .article__wrapper__footer__poster-details__infos__posting-date {
   font-weight: 500;
-  font-size: 15px;
+  font-size: 13px;
   color: #9eafc2;
   position: relative;
   top: -12px;
@@ -156,7 +156,7 @@ body .article__wrapper__footer__share__panel {
           transform: translate(-50%, -50%);
   background-color: #48556a;
   position: absolute;
-  left: 720.5px;
+  left: 686px;
   top: 55%;
   height: 56px;
   width: 275px;
