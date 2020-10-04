@@ -35,7 +35,7 @@ body .article {
 
 body .article img {
   height: 100%;
-  width: 280px;
+  width: 290px;
   -o-object-position: left;
      object-position: left;
   -o-object-fit: cover;
@@ -158,7 +158,7 @@ body .article__wrapper__footer__share__panel {
           transform: translate(-50%, -50%);
   background-color: #48556a;
   position: absolute;
-  left: 360px;
+  left: 350px;
   top: -40px;
   height: 56px;
   width: 275px;

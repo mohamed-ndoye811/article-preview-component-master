@@ -20,7 +20,7 @@ window.onload = function () {
             }
         }).from(sharePanelText, {
             opacity: 0,
-            y: 30,
+            y: 35,
             duration: 0.8,
             delay: -0.5
         }).from(socialIcons, {
