@@ -21,8 +21,8 @@ body {
     top: 47%;
     font-size: 13px;
     background-color: white;
-    width: 750px;
-    height: 290px;
+    width: 745px;
+    height: 285px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -32,7 +32,7 @@ body {
     // Image of the article
     img {
       height: 100%;
-      width: 300px;
+      width: 280px;
       object-position: left;
       object-fit: cover;
       border-radius: 9px 0 0 9px;
@@ -48,14 +48,14 @@ body {
 
         // Title
         h1 {
-          font-size: 19px;
+          font-size: 21px;
           color: $very-dark-grayish-blue;
-          line-height: 1.3em;
+          line-height: 1.4em;
           font-weight: 700;
 
           margin: {
             bottom: 5px;
-            top: 10px;
+            top: 15px;
           }
         }
 
@@ -63,8 +63,8 @@ body {
         p {
           color: $desaturated-dark-blue;
           width: 360px;
-          margin-top: 20px;
-          text-align: justify;
+          margin-top: 12px;
+          text-align: left;
           line-height: 1.5em;
           letter-spacing: 0.025em;
 
@@ -83,6 +83,8 @@ body {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        position: relative;
+        top: -10px;
 
         &__poster-details {
           display: flex;
@@ -92,22 +94,22 @@ body {
 
           // Poster avatar
           img {
-            height: 45px;
-            width: 45px;
+            height: 40px;
+            width: 40px;
             border-radius: 100px;
           }
 
           //Poster infos
           &__infos {
-            margin-left: 20px;
+            margin-left: 15px;
             position: relative;
-            top: 5px;
+            top: 0px;
 
             &__username {
               font-size: 14px;
               color: $very-dark-grayish-blue;
               position: relative;
-              top: 2px;
+              top: 5px;
             }
 
             &__posting-date {
@@ -118,7 +120,7 @@ body {
 
               color: $grayish-blue;
               position: relative;
-              top: -12px;
+              top: -7px;
             }
           }
         }
@@ -146,13 +148,13 @@ body {
           }
 
           &__panel {
-            visibility: visible;
+            visibility: hidden;
             opacity: 1;
             transform: translate(-50%, -50%);
             background-color: $very-dark-grayish-blue;
             position: absolute;
-            left: 686px;
-            top: 55%;
+            left: 360px;
+            top: -40px;
             height: 56px;
             width: 275px;
             padding: 1px;

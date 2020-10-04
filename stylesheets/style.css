@@ -16,8 +16,8 @@ body .article {
   top: 47%;
   font-size: 13px;
   background-color: white;
-  width: 750px;
-  height: 290px;
+  width: 745px;
+  height: 285px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,7 +35,7 @@ body .article {
 
 body .article img {
   height: 100%;
-  width: 300px;
+  width: 280px;
   -o-object-position: left;
      object-position: left;
   -o-object-fit: cover;
@@ -49,19 +49,19 @@ body .article__wrapper {
 }
 
 body .article__wrapper__text h1 {
-  font-size: 19px;
+  font-size: 21px;
   color: #48556a;
-  line-height: 1.3em;
+  line-height: 1.4em;
   font-weight: 700;
   margin-bottom: 5px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 body .article__wrapper__text p {
   color: #6d7f97;
   width: 360px;
-  margin-top: 20px;
-  text-align: justify;
+  margin-top: 12px;
+  text-align: left;
   line-height: 1.5em;
   letter-spacing: 0.025em;
   font-weight: 500;
@@ -82,6 +82,8 @@ body .article__wrapper__footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  top: -10px;
 }
 
 body .article__wrapper__footer__poster-details {
@@ -101,22 +103,22 @@ body .article__wrapper__footer__poster-details {
 }
 
 body .article__wrapper__footer__poster-details img {
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
   border-radius: 100px;
 }
 
 body .article__wrapper__footer__poster-details__infos {
-  margin-left: 20px;
+  margin-left: 15px;
   position: relative;
-  top: 5px;
+  top: 0px;
 }
 
 body .article__wrapper__footer__poster-details__infos__username {
   font-size: 14px;
   color: #48556a;
   position: relative;
-  top: 2px;
+  top: 5px;
 }
 
 body .article__wrapper__footer__poster-details__infos__posting-date {
@@ -124,7 +126,7 @@ body .article__wrapper__footer__poster-details__infos__posting-date {
   font-size: 13px;
   color: #9eafc2;
   position: relative;
-  top: -12px;
+  top: -7px;
 }
 
 body .article__wrapper__footer__share__button-wrapper {
@@ -150,14 +152,14 @@ body .article__wrapper__footer__share__button-wrapper svg circle {
 }
 
 body .article__wrapper__footer__share__panel {
-  visibility: visible;
+  visibility: hidden;
   opacity: 1;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: #48556a;
   position: absolute;
-  left: 686px;
-  top: 55%;
+  left: 360px;
+  top: -40px;
   height: 56px;
   width: 275px;
   padding: 1px;

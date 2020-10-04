@@ -35,7 +35,7 @@ window.onload = function () {
         shareButtonState = !shareButtonState;
         var panelVisible = (shareButtonState) ? sharePanelReveal() : sharePanelHide();
         console.log(panelVisible);
-    }
+    };
 
     function sharePanelReveal() {
         shareButtonCircle.style.fill = "hsl(214, 17%, 51%)";
