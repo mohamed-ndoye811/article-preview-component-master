@@ -19,7 +19,6 @@ body {
     position: fixed;
     left: 50%;
     top: 47%;
-    font-size: 13px;
     background-color: white;
     width: 745px;
     height: 285px;
@@ -29,6 +28,13 @@ body {
     border-radius: 9px;
     box-shadow: 0 0px 50px $grayish-blue;
 
+    @media screen and (max-device-width: 375px) {
+      flex-direction: column;
+      width: 325px;
+      height: 75%;
+      overflow: hidden;
+    }
+
     // Image of the article
     img {
       height: 100%;
@@ -36,6 +42,12 @@ body {
       object-position: left;
       object-fit: cover;
       border-radius: 9px 0 0 9px;
+
+      @media screen and (max-device-width: 375px) {
+        border-radius: 9px 9px 0 0;
+        width: 325px;
+        height: 200px;
+      }
     }
 
     // Article wrapper
@@ -43,14 +55,25 @@ body {
       margin: -95px 40px 0px 40px;
       height: 150px;
 
+      @media screen and (max-device-width: 375px) {
+        margin: 25px 50px 0px 35px;
+        width: 250px;
+      }
+
       // Article text
       &__text {
+
         // Title
         h1 {
           font-size: 21px;
           color: $very-dark-grayish-blue;
           line-height: 1.4em;
           font-weight: 700;
+
+          @media screen and (max-device-width: 375px) {
+            font-size: 15px;
+            order: 2;
+          }
 
           margin: {
             bottom: 5px;
@@ -64,12 +87,14 @@ body {
           width: 360px;
           margin-top: 12px;
           text-align: left;
-          line-height: 1.5em;
+          line-height: 1.65em;
           letter-spacing: 0.025em;
+          font-weight: 500;
 
-          font: {
-            weight: 500;
-            size: 13px;
+          @media screen and (max-device-width: 375px) {
+            margin-top: 15px;
+            width: 270px;
+            word-break: keep-all;
           }
         }
       }
@@ -82,6 +107,14 @@ body {
         align-items: center;
         position: relative;
         top: -10px;
+
+        @media screen and (max-device-width: 375px) {
+          padding: {
+            top: 10px;
+          }
+
+          width: 270px;
+        }
 
         &__poster-details {
           display: flex;
@@ -110,11 +143,7 @@ body {
             }
 
             &__posting-date {
-              font: {
-                weight: 500;
-                size: 13px;
-              }
-
+              font-weight: 500;
               color: $grayish-blue;
               position: relative;
               top: -7px;
@@ -141,6 +170,14 @@ body {
                 fill: $light-grayish-blue;
                 transition: ease 0.8s;
               }
+
+              @media screen and (max-device-width: 375px) {
+                transform: scale(0.9, 0.9);
+              }
+            }
+
+            @media screen and (max-device-width: 375px) {
+              z-index: 2;
             }
           }
 
@@ -151,13 +188,24 @@ body {
             background-color: $very-dark-grayish-blue;
             position: absolute;
             left: 350px;
-            top: -40px;
             height: 56px;
             width: 275px;
             padding: 1px;
             border-radius: 10px;
             box-shadow: 0 2px 10px $grayish-blue;
             justify-content: center;
+
+            @media screen and (max-device-width: 375px) {
+              visibility: hidden;
+              transform: translate(-50%, -50%);
+              border-radius: 0px;
+              left: 49.5%;
+              bottom: -35px;
+              width: 324px;
+              z-index: 1;
+              box-shadow: none;
+              height: 70px;
+            }
 
             &__content {
               position: relative;
@@ -167,6 +215,12 @@ body {
               align-items: center;
               padding-left: 35px;
               top: 10%;
+
+              @media screen and (max-device-width: 375px) {
+                top: 11.5px;
+                justify-content: left;
+                padding-left: 0;
+              }
 
               margin: {
                 left: 30px;
@@ -188,6 +242,10 @@ body {
                 flex-direction: row;
                 align-items: center;
 
+                @media screen and (max-device-width: 375px) {
+                  margin-left: 0;
+                }
+
                 .icon {
                   cursor: pointer;
                   margin-right: 1.2rem;
@@ -202,10 +260,14 @@ body {
               border-width: 20px 20px 0 20px;
               left: 50%;
               top: 21px;
-              border-color: $very-dark-grayish-blue transparent transparent
-                transparent;
+              border-color: $very-dark-grayish-blue transparent transparent transparent;
               width: 0;
               height: 0;
+
+              @media screen and (max-device-width: 375px) {
+                visibility: hidden;
+
+              }
             }
           }
         }
@@ -215,8 +277,15 @@ body {
 
   .attribution {
     position: fixed;
-    bottom: 5px;
+    font-size: 13px;
     left: 50%;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
     transform: translateX(-50%);
+
+    @media screen and (max-device-width: 375px) {
+      bottom: 20px;
+    }
   }
 }

@@ -42,13 +42,13 @@ window.onload = function () {
         shareButtonIcon.style.fill = "hsl(210, 46%, 95%)";
         sharePanel.style.visibility = "visible";
         panelTl.play();
-        return "share panel revealed";
+        return "[debug] share panel revealed";
     }
 
     function sharePanelHide() {
         shareButtonCircle.style.fill = "hsl(210, 46%, 95%)";
         shareButtonIcon.style.fill = "hsl(214, 17%, 51%)";
         panelTl.reverse();
-        return "share panel hidden";
+        return "[debug] share panel hidden";
     }
 };
