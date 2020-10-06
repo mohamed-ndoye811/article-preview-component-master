@@ -132,6 +132,7 @@ body {
             height: 40px;
             width: 40px;
             border-radius: 100px;
+            cursor: pointer;
           }
 
           //-> INFOS
@@ -237,6 +238,7 @@ body {
                 padding-left: 0;
               }
 
+              //-> "SHARE" TEXT
               p {
                 color: $grayish-blue;
                 letter-spacing: 7px;

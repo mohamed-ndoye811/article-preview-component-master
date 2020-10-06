@@ -156,6 +156,7 @@ body .article__wrapper__footer__poster-details img {
   height: 40px;
   width: 40px;
   border-radius: 100px;
+  cursor: pointer;
 }
 
 body .article__wrapper__footer__poster-details__infos {
