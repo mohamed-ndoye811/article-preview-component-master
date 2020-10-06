@@ -178,13 +178,10 @@ body .article__wrapper__footer__poster-details__infos__posting-date {
 }
 
 body .article__wrapper__footer__share__button-wrapper {
+  cursor: pointer;
   height: 42px;
   width: 42px;
   position: relative;
-}
-
-body .article__wrapper__footer__share__button-wrapper svg {
-  cursor: pointer;
 }
 
 body .article__wrapper__footer__share__button-wrapper svg path {
@@ -220,6 +217,7 @@ body .article__wrapper__footer__share__panel {
   background-color: #48556a;
   position: absolute;
   left: 350px;
+  top: -40px;
   height: 56px;
   width: 275px;
   padding: 1px;
@@ -240,6 +238,7 @@ body .article__wrapper__footer__share__panel {
     left: 49.5%;
     bottom: -35px;
     width: 324px;
+    top: auto;
     z-index: 1;
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -269,7 +268,7 @@ body .article__wrapper__footer__share__panel__content {
 
 @media screen and (max-device-width: 375px) {
   body .article__wrapper__footer__share__panel__content {
-    top: 11.5px;
+    top: 12px;
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
