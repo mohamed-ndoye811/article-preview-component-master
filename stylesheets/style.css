@@ -75,6 +75,7 @@ body .article__wrapper {
 }
 
 body .article__wrapper__text h1 {
+  cursor: pointer;
   font-size: 21px;
   color: #48556a;
   line-height: 1.4em;
@@ -332,7 +333,7 @@ body .article__wrapper__footer__share__panel #triangle {
   }
 }
 
-body .attribution {
+body .attributions {
   position: fixed;
   font-size: 13px;
   left: 50%;
@@ -344,7 +345,7 @@ body .attribution {
 }
 
 @media screen and (max-device-width: 375px) {
-  body .attribution {
+  body .attributions {
     bottom: 20px;
   }
 }

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
 
-// Colors variables
+// --- COLORS VARIABLES ---
 $very-dark-grayish-blue: hsl(217, 19%, 35%);
 $desaturated-dark-blue: hsl(214, 17%, 51%);
 $grayish-blue: hsl(212, 23%, 69%);
@@ -14,6 +14,7 @@ body {
   font-family: "Manrope", sans-serif;
   font-size: 13px;
 
+  // --- ARTICLE FRAME CONTAINER ---
   .article {
     transform: translate(-50%, -50%);
     position: fixed;
@@ -35,7 +36,7 @@ body {
       overflow: hidden;
     }
 
-    // Image of the article
+    // -> ARTICLE'S IMAGE
     img {
       height: 100%;
       width: 290px;
@@ -50,7 +51,7 @@ body {
       }
     }
 
-    // Article wrapper
+    // --- ARTICLE CONTENT ---
     &__wrapper {
       margin: -95px 40px 0px 40px;
       height: 150px;
@@ -60,28 +61,31 @@ body {
         width: 250px;
       }
 
-      // Article text
+      // --- ARTICLE TEXT CONTENT ---
       &__text {
 
-        // Title
+        // -> TITLE
         h1 {
+          cursor: pointer;
           font-size: 21px;
           color: $very-dark-grayish-blue;
           line-height: 1.4em;
           font-weight: 700;
+
+          margin: {
+            bottom: 5px;
+            top: 15px;
+          }
 
           @media screen and (max-device-width: 375px) {
             font-size: 15px;
             order: 2;
           }
 
-          margin: {
-            bottom: 5px;
-            top: 15px;
-          }
+
         }
 
-        // Description
+        // -> DESCRIPTION
         p {
           color: $desaturated-dark-blue;
           width: 360px;
@@ -99,7 +103,7 @@ body {
         }
       }
 
-      // Post
+      //--- ARTICLE INFOS CONTAINER ---
       &__footer {
         display: flex;
         flex-direction: row;
@@ -116,20 +120,21 @@ body {
           width: 270px;
         }
 
+        // --- ARTICLE POSTER DETAILS ---
         &__poster-details {
           display: flex;
           flex-direction: row;
           justify-content: flex-start;
           align-items: center;
 
-          // Poster avatar
+          //-> AVATAR
           img {
             height: 40px;
             width: 40px;
             border-radius: 100px;
           }
 
-          //Poster infos
+          //-> INFOS
           &__infos {
             margin-left: 15px;
             position: relative;
@@ -151,8 +156,10 @@ body {
           }
         }
 
-        //Share section
+        // --- SHARE SECTION ---
         &__share {
+
+          //-> BUTON
           &__button-wrapper {
             cursor: pointer;
             height: 42px;
@@ -180,6 +187,7 @@ body {
             }
           }
 
+          ///-> SHARE PANEL
           &__panel {
             visibility: hidden;
             opacity: 1;
@@ -208,6 +216,7 @@ body {
               height: 70px;
             }
 
+            //-> SHARE PANEL WRAPPER
             &__content {
               position: relative;
               display: flex;
@@ -217,15 +226,15 @@ body {
               padding-left: 35px;
               top: 10%;
 
+              margin: {
+                left: 30px;
+                right: 30px;
+              }
+
               @media screen and (max-device-width: 375px) {
                 top: 12px;
                 justify-content: left;
                 padding-left: 0;
-              }
-
-              margin: {
-                left: 30px;
-                right: 30px;
               }
 
               p {
@@ -235,6 +244,7 @@ body {
                 user-select: none;
               }
 
+              //-> SOCIALS ICONS WRAPPER
               #socials {
                 position: relative;
                 left: 8px;
@@ -247,6 +257,7 @@ body {
                   margin-left: 0;
                 }
 
+                //-> SOCIALS ICONS WRAPPER
                 .icon {
                   cursor: pointer;
                   margin-right: 1.2rem;
@@ -254,6 +265,7 @@ body {
               }
             }
 
+            //-> SHARE PANEL BOTTOM TRIANGLE
             #triangle {
               transform: translate(-50%, -50%);
               position: relative;
@@ -276,7 +288,8 @@ body {
     }
   }
 
-  .attribution {
+  // --- ATTRIBUTIONS --- 
+  .attributions {
     position: fixed;
     font-size: 13px;
     left: 50%;
